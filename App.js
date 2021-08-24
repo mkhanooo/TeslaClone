@@ -6,7 +6,7 @@ import CarItem from "./components/Caritem";
 export default function App() {
   return (
     <View style={styles.container}>
-      <CarItem /> 
+      <CarItem />
       <StatusBar style="auto" />
     </View>
   );
@@ -19,5 +19,4 @@ const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
   },
- 
 });
