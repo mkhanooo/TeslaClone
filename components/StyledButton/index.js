@@ -1,22 +1,21 @@
-import React from "react";
-import { View, Text, Pressable } from "react-native";
-import styles from "./style";
+import React from 'react';
+import {View, Text, Pressable} from 'react-native';
+import styles from './styles';
 
 const StyledButton = (props) => {
-    // const type = props.type;
-    // const content = props.content;
-    // const onPress = props.onPress;
-    
-    const {type,content,onPress} = props;
-    const backgroundColor = type === 'primary' ? '#171a20cc':'ffffffa6'; 
-    const textColor = type === 'primary' ? '#ffffff':'#171a20';
+
+  const { type, content, onPress } = props;
+
+  const backgroundColor = type === 'primary' ? '#171A20CC' : '#FFFFFFA6';
+  const textColor = type === 'primary' ? '#FFFFFF' : '#171A20';
+
   return (
     <View style={styles.container}>
       <Pressable
         style={[styles.button, {backgroundColor: backgroundColor}]}
-        onPress={() => onPress() }
+        onPress={() => onPress()}
       >
-        <Text style={[styles.text,{color:textColor}]}>{content}</Text>
+        <Text style={[styles.text, {color: textColor}]}>{content}</Text>
       </Pressable>
     </View>
   );
