@@ -1,6 +1,6 @@
 import React from 'react';
-import {View, Text, FlatList, Dimensions} from 'react-native';
-import CarItem from "../CarItem";
+import {View, FlatList, Dimensions} from 'react-native';
+import CarItem from "../Caritem";
 
 import styles from './styles';
 import cars from './cars';
